@@ -6,6 +6,9 @@ WORKDIR /project-build
 COPY package.json package.json
 
 RUN npm install --silent
+
+COPY . .
+
 RUN npm run-script build
 
 FROM python:3.7-slim-buster 
