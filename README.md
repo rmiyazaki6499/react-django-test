@@ -1,72 +1,81 @@
+![Django React](https://user-images.githubusercontent.com/41876764/90928043-015ce780-e3ab-11ea-93c1-fc9702756cb8.png)
+
 ## react-django-test
 Deployment test for a React/Django Webapp
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Setting up the project](#setting-up-the-project)
+- [Setting up the project with Docker](#setting-up-the-project-with-docker)
+- [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
-### `yarn start`
+## Setting up the project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  Start by cloning the project with the command:
+  ```
+  $ git clone https://github.com/rmiyazaki6499/react-django-test.git
+  ```
+  
+  ## Setting up the project with Docker
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
 
-### `yarn test`
+  ### Install Docker
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  To make this as easy as possible, we will be using *Docker Compose* to creat our container.
 
-### `yarn build`
+  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  https://www.docker.com/products/docker-desktop
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Or if you are on a Linux Distribution follow the directions here:
+  https://docs.docker.com/compose/install/
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  - To confirm you have Docker Compose, open up your terminal and run the command below:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```
+  $ docker-compose --version
+  docker-compose version 1.26.2, build eefe0d31
+  ```
+  
+  - Go into the project directory to build and run the container with:
 
-### `yarn eject`
+  ```
+  $ cd react-django-test/
+  $ docker-compose up -d --build
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  **This may take a few moments**
+  
+  Navigate to http://localhost:8000 to view the site on the local server.
+It should look something like this:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  
+  ### Cleaning up the Container and Image
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - To stop the container from running, use `<Ctrl-C>` twice.
+  - To close down the container use the command:
 
-## Learn More
+  ```
+  $ docker-compose down
+  ```
+  - Then to clean up the container and image which we are no longer using use the command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ```
+  $ docker system prune -fa
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - Confirm that the container and image is no longer there with:
 
-### Code Splitting
+  ```
+  $ docker system df -v
+  ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Contact
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Ryuichi Miyazaki](https://github.com/rmiyazaki6499)
