@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  react-django-test:
+    build: '.'
+    ports:
+      - '8000:8000'
