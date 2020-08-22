@@ -11,7 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Setting up the project](#setting-up-the-project)
 - [Setting up the project with Docker](#setting-up-the-project-with-docker)
 - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
-- [Inspiration](#inspiration)
 - [Contact](#contact)
 
 ## Setting up the project
