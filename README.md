@@ -22,13 +22,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   
   ## Setting up the project with Docker
 
-  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
 
   ### Install Docker
 
   To make this as easy as possible, we will be using *Docker Compose* to creat our container.
 
-  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  - If you do not have Docker yet, start by downloading it here if you are on a Mac or Windows:
   https://www.docker.com/products/docker-desktop
 
   - Or if you are on a Linux Distribution follow the directions here:
