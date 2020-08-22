@@ -54,7 +54,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   Navigate to http://localhost:8000 to view the site on the local server.
 It should look something like this:
 
-
+![React Page](https://user-images.githubusercontent.com/41876764/90948821-78b86880-e3f7-11ea-8b35-72f547f110cb.png)
   
   ### Cleaning up the Container and Image
 
