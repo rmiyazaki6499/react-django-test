@@ -22,7 +22,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   
   ## Setting up the project with Docker
 
-  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **react-django-test**.
 
   ### Install Docker
 
